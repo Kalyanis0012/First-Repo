@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title> Calculator</title>
+     <style>
+        @font-face{
+            font-family:'Digital';
+            src:url('DS-DIGI.TTF') format('truetype');
+        }
+        .Calculator-container{
+            width:400px;
+            background-color:#5587d4;
+            padding:20px;
+            border-radius: 20px;
+          }
+      .row {
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        margin-top: 10px;
+        }
+      .btn{
+        height:60px;
+        width:80px;
+        font-size: 40px;
+        font-weight: bold;
+        background-color: white;
+        border-radius: 8px;
+        border: 1px gray;
+       }
+       .btn:hover{
+        cursor: pointer;
+        box-shadow: 0px 2px 5px white;
+        transition: 0.5s;
+       }
+       .bg-yellow{
+        background-color:#222e47;
+        color:white;
+        border:2px solid white;
+        
+       }
+       .input-screen{
+        width:100%;
+        height:70px;
+        margin-bottom: 20px;
+        font-size: 70px;
+        background-color: #18f83d;
+        font-family: 'Digital';
+       }
+     </style>
+   </head>
+   <body>
+         <div class="Calculator-container">
+            <span class="brand">SLD-100NR</span>
+            <div class="row">
+                <input type="text" id="input" class="input-screen" />
+
+            </div>
+          <div class="row">
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn bg-yellow " >÷</button>
+          </div>
+
+          <div class="row">
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn bg-yellow">*</button>
+          </div>
+
+          <div class="row">
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn bg-yellow">-</button>
+          </div>
+
+          <div class="row">
+            <button class="btn">0</button>
+            <button class="btn bg-yellow">.</button>
+            <button class="btn bg-yellow">+</button>
+            <button class="btn bg-yellow">=</button>
+          </div>
+         </div>
+
+
+   </body>
+</html>
